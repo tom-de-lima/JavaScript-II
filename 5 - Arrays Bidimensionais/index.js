@@ -22,7 +22,7 @@ console.log(matrizEditada)
 
 for (let i = 0; i < matrizEditada.length; i++) {
   for (let j = 0; j < matrizEditada[i].length; j++) { //Acessa e percorre os elementos do array mais interno na posição x do array principal
-    const elemento = matrizEditada[i][j]; //armazena o lemento na posição i do array principal e na posição j do array secundário
+    const elemento = matrizEditada[i][j]; //armazena o elemento na posição i do array principal e na posição j do array secundário
     console.log("Posição: (" + i + ", " + j + ") Valor: " + elemento) // Concatenação para exibir elementos do subarray na posição do array principal
 
   }
