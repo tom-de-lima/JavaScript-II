@@ -50,6 +50,7 @@ while (looping) {
         alert("Valor inválido. Tente novamente.")
     }
     else {
+        
         // Construção do menu
 
 switch (menu){
