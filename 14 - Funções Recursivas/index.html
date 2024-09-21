@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula Função Recursiva em JS</title>
+</head>
+<body>
+    <header>
+        <h1>Criando Funçãoes Recursivas</h1>
+    </header>
+    <section>
+        <h2>O que é uma função recursiva</h2>
+        <p>
+            Uma função recursiva é uma função que chama ela mesma para resolver um problema menor.
+            <br>
+            Por exemplo, uma função que calcula a soma de todos os números de 1 a N pode ser implementada como:
+            <br>
+            <code>
+                function somaRecursiva(n) {
+                    if (n === 1) {
+                        return 1;
+                    } else {
+                        return n + somaRecursiva(n - 1);
+                    }
+                }
+            </code>
+        </p>
+        <script src="./script.js"></script>
+    </section>
+</body>
+</html>
