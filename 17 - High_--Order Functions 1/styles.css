@@ -1,0 +1,52 @@
+
+/*margin: 0; e padding: 0;: Remove as margens e espaçamentos internos aplicados por padrão nos elementos.
+box-sizing: border-box;: Garante que o padding e as bordas sejam incluídos no cálculo da largura e altura do elemento, facilitando o controle dos tamanhos dos componentes da página.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: Arial, sans-serif;: Define a fonte padrão da página. Neste exemplo, "Arial" será a fonte principal e "sans-serif" a fonte alternativa.
+color: #333;: Define a cor do texto padrão como um cinza escuro (#333), pois o preto absoluto (#000) pode ser muito contrastante e cansar a visão.
+background-color: #f9f9f9;: Define uma cor de fundo clara e suave, o que ajuda a dar uma aparência agradável ao site.
+line-height: 1.6;: Ajusta o espaçamento entre as linhas de texto para melhorar a legibilidade.*/
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+}
+
+/*text-decoration: none;: Remove o sublinhado padrão dos links.
+color: #007bff;: Define uma cor azul suave para os links.
+a:hover: Aqui, a cor do link é alterada ao passar o mouse (efeito hover), oferecendo um feedback visual ao usuário.*/
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/*max-width: 1200px;: Define uma largura máxima para a página, impedindo que ela se expanda muito em telas grandes.
+margin: 0 auto;: Centraliza o conteúdo da página horizontalmente.
+padding: 20px;: Adiciona um espaçamento interno para que o conteúdo não fique encostado nas bordas da página.*/
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
