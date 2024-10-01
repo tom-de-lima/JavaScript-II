@@ -27,7 +27,7 @@ console.log(letras.length)
 const quantidadeTipoLetras = letras.reduce(function(acumulador, letras) {
     if (acumulador[letras] && letras !== " ") {
         acumulador[letras]++;
-    } else {
+    } else if (letras !== " ") {
         acumulador[letras] = 1;
     }
     return acumulador;
