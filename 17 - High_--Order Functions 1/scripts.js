@@ -63,3 +63,23 @@ const racas = arrayPersonagens.reduce(function (acumulador, personagem) {
   }, {})
 
 console.log(racas)
+
+//----------------------------------------------------------------
+
+//Método Sort(): É utilizado para ordenar o array em crescente ou decrescente
+
+//Apenas ordenar o array original:
+
+arrayPersonagens.sort(function(a, b) {
+  return a.nivel - b.nivel;
+})
+
+console.log(arrayPersonagens)
+
+// Ordenando o array em uma nova variável:
+
+const arrayOrdenado = arrayPersonagens.slice().sort(function(a, b) { 
+  return b.nivel - a.nivel;
+})
+
+console.log(arrayOrdenado) // Array ordenado decrescente
