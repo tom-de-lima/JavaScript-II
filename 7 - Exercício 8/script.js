@@ -33,7 +33,7 @@ while(running) {
             break
             
         case 2:
-            if(listaImoveis.length == 0) {
+            if(listaImoveis.length === 0) {
                 alert("Nenhum imóvel cadastrado.")
             }
             else {

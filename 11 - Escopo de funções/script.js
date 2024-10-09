@@ -24,5 +24,3 @@ function criarAnimal() {
 console.log(nome)
 mudarNome()
 console.log(nome)
-
-criarAnimal()
