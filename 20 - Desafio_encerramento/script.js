@@ -10,8 +10,8 @@ function criarVaga(){
     let descricao = prompt("Digite a descrição para a vaga:")
     let dataLimite = prompt("Digite a data limte para inscrição: (formato: DD/MM/AAAA)")
 
-    const confirmacao = confirm("#### Confirme as informações: #### \n\n" + "\nNome da vaga: " + nome + "\nDescrição: " + descricao +  "\nData limite para inscrição :" + dataLimte + "\n----------------------------------------------------------------")
-
+    const confirmacao = confirm("#### Confirme as informações: #### \n\n" + "\nNome da vaga: " + nome + "\nDescrição: " + descricao +  "\nData limite para inscrição :" + dataLimite + "\n----------------------------------------------------------------")
+        
     if(confirmacao) {
         const vaga = {
             nome: nome,
