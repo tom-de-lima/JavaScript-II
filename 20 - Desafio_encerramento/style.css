@@ -43,7 +43,7 @@ footer {
 }
 
 /* Estilização para um único item dentro de uma estrutura pai */
-.list ol li:nth-child(5) { /* dentro do objeto de classe "list", na lista ordenada "ol", apenas a quarta "li" será estilizada*/
+.list ol li:nth-child(7) { /* dentro do objeto de classe "list", na lista ordenada "ol", apenas a quarta "li" será estilizada*/
     color: blue;
     font-weight: bold;
 }
