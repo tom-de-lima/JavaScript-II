@@ -10,7 +10,7 @@ function criarVaga(){
     let descricao = prompt("Digite a descrição para a vaga:")
     let dataLimite = prompt("Digite a data limte para inscrição: (formato: DD/MM/AAAA)")
 
-    const confirmacao = confirm("#### Confirme as informações: #### \n\n" + "\nNome da vaga: " + nome + "\nDescrição: " + descricao +  "\nData limite para inscrição :" + dataLimite + "\n----------------------------------------------------------------")
+    const confirmacao = confirm("Confirme as informações: #### \n\n" + "\nNome da vaga: " + nome + "\nDescrição: " + descricao +  "\nData limite para inscrição :" + dataLimite + "\n----------------------------------------------------------------")
         
     if(confirmacao) {
         const vaga = {
@@ -36,7 +36,7 @@ else {
 
     let vagasEmTexto = "Vagas disponíveis no momento: \n\n"
 
-    //Aqui, vagasEmTexto += está fazendo o seguinte: Pega o valor atual da variável vagasEmTexto. Concatena (ou seja, junta) esse valor com o novo conteúdo (a string que contém informações da vaga, como nome, índice, etc.). Atribui o resultado de volta para a variável vagasEmTexto.
+    //Aqui, vagasEmTexto += está fazendo o seguinte: Pega o valor atual da variável vagasEmTexto. Concatena (ou seja, junta) esse valor com o novo conteúdo (a string que contém informações da vaga, como nome, índice, etc.), Atribui o resultado de volta para a variável vagasEmTexto.
     for(let i = 0; i < vagasDeEmprego.length; i++){
         vagasEmTexto += "Índice da vaga: " + i + 
         "\nNome da vaga: " + vagasDeEmprego[i].nome +
@@ -88,7 +88,7 @@ function cadastroCandidato() {
         const vaga = vagasDeEmprego[indexVaga]
         let nomeCandidato = prompt("Digite o nome do candidato:")
 
-        const confirmacao = confirm("##### Confirme o nome do candidato ####" + nomeCandidato + 
+        const confirmacao = confirm("Confirme o nome do candidato: " + nomeCandidato + 
             "\n----------------------------------------------------------------")
 
         if(confirmacao){
@@ -109,7 +109,7 @@ function removerVaga(){
     }
     else {
         const vaga = vagasDeEmprego[indexVaga]
-        const confirmacao = confirm("##### Tem certeza que deseja remover a vaga '" + vaga.nome + "'? ####")
+        const confirmacao = confirm("Tem certeza que deseja remover a vaga '" + vaga.nome + "'?")
 
         if(confirmacao) {
             vagasDeEmprego.splice(indexVaga, 1)
