@@ -1,36 +1,42 @@
-// Objetos são estruturas de dados que trabalham com conjunto de dados com chave valor. Chave é nome da propriedade e valor é semelhante ao armazenado em uma variável.
-
-// Variável
 
 let variavel = 345
-
-// Array
+// Declara uma variável chamada "variavel" e a inicializa com o valor numérico 345.
 
 const array = ["Elemento 1", false, 23, "Elemento 2", 23.67]
-
-// Objeto
+// Declara um array chamado "array" contendo diferentes tipos de dados: string, boolean, número inteiro e número decimal.
 
 let objeto = {}
+// Declara um objeto vazio chamado "objeto".
 
 objeto.chave = "Valor"
+// Adiciona uma propriedade chamada "chave" ao objeto e atribui a ela o valor "Valor".
 
 console.log(objeto) 
+// Exibe o objeto completo no console. Saída: { chave: "Valor" }
 
-console.log(objeto.chave) // Valor
+console.log(objeto.chave) 
+// Exibe o valor da propriedade "chave" do objeto diretamente. Saída: "Valor"
 
-// Objeto com mais valores
 const objeto1 = []
+// Declara uma variável "objeto1" como um array vazio. Note que arrays em JavaScript são tratados como objetos do tipo "object".
 
-objeto1.nome = "Antônio" //add
-
-objeto1.idade = 28 //add
-
-objeto1.sexo = "Masculino" //add
-
+objeto1.nome = "Antônio" 
+objeto1.idade = 28 
+objeto1.sexo = "Masculino" 
 objeto1.capacidades = ["Programação", "Análise de dados", "Consciência corporal"]
+// Embora "objeto1" seja um array, propriedades foram adicionadas diretamente a ele como se fosse um objeto comum.
+// Agora "objeto1" possui propriedades semelhantes a um objeto literal, com chaves e valores.
 
-console.log("Tipo de dado: " + typeof objeto1)  
+console.log("Tipo de dado: " + typeof objeto1)
+// Exibe o tipo de dado de "objeto1" no console, que será "object", pois arrays são uma forma especial de objeto em JavaScript.
 
-console.log(objeto1)  // { nome: 'Antônio', idade: 28, sexo: 'Masculino' }
-
-
+console.log(objeto1)
+// Exibe o conteúdo de "objeto1" no console, incluindo suas propriedades personalizadas.
+// Saída esperada:
+// {
+//   0: undefined,
+//   nome: "Antônio",
+//   idade: 28,
+//   sexo: "Masculino",
+//   capacidades: ["Programação", "Análise de dados", "Consciência corporal"]
+// }

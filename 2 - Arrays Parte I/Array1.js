@@ -1,42 +1,46 @@
-const arr = ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli"]
+const arr = [
+  "Frodo",
+  "Sam",
+  "Merry",
+  "Pippin",
+  "Gandalf",
+  "Aragorn",
+  "Legolas",
+  "Gimli",
+]
+// Declara um array chamado "arr" que contém uma lista de nomes como strings.
 
-// 1 Adcionar elementos no array
-
-// 1.1 Adcionar usando a função "push"
-
-arr.push("Boromir") // inserido ao final da lista
-console.log(arr) 
-
-// Adcionar usando a função "unshift"
-
-arr.unshift("Sauron") // inserido no início da lista
+// Adiciona "Boromir" ao final do array.
+arr.push("Boromir") // O método push adiciona um novo elemento no final do array.
 console.log(arr)
+// Saída: ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir"]
 
-// 2 Remover elementos do array
-
-// 2.1 Remover usando a função "pop"
-
-arr.pop() // remove o último elemento da lista
+// Adiciona "Sauron" ao início do array.
+arr.unshift("Sauron") // O método unshift adiciona um novo elemento no início do array, movendo os demais elementos para a direita.
 console.log(arr)
+// Saída: ["Sauron", "Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir"]
 
-// 2.2 Remover usando a função "shift"
-
-arr.shift() // remove o primeiro elemento da lista
+// Remove o último elemento do array.
+arr.pop() // O método pop remove o último elemento do array.
 console.log(arr)
+// Saída: ["Sauron", "Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli"]
 
-// 3 Pesquisar por um elemento
+// Remove o primeiro elemento do array.
+arr.shift() // O método shift remove o primeiro elemento do array, movendo os demais elementos para a esquerda.
+console.log(arr)
+// Saída: ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli"]
 
-// 3.1 Pesquisar usando a função "includes"
+// Verifica se "Merry" está no array.
+console.log(arr.includes("Merry"))
+// O método includes retorna true se o elemento especificado ("Merry") estiver no array e false se não estiver.
+// Saída: true
 
-console.log(arr.includes("Merry")) // true
+// Encontra a posição de "Merry" no array.
+console.log(arr.indexOf("Merry"))
+// O método indexOf retorna o índice (posição) do elemento especificado ("Merry") no array. Se o elemento não estiver no array, retorna -1.
+// Saída: 2
 
-// 3.2 Pesquisar usando a função "indexOf"
- 
-console.log(arr.indexOf("Merry")) // 2
-
-// 4 Cortar e concatenar um array
-
-// 4.1 Cortar usando a função "slice"
-
-console.log(arr.slice(2, 4)) // ["Merry", "Pippin"]
-
+// Extrai uma porção do array do índice 2 até o índice 4 (não inclusivo).
+console.log(arr.slice(2, 4))
+// O método slice retorna uma cópia dos elementos do array a partir do índice inicial (2) até o índice final (4), mas sem incluir o índice final.
+// Saída: ["Merry", "Pippin"]
