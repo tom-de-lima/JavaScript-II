@@ -9,7 +9,7 @@ const array_2 = ["Bunda 1", "Bunda 2", "Bunda 3", "Bunda 4"]
 // Declara dois arrays, array_1 e array_2, cada um contendo strings como elementos.
 
 const array_concatenado = array_1.concat(array_2, "elemento_ousado")
-// Usa o método concat para combinar array_1 e array_2, além de adicionar o string "elemento_ousado" ao final.
+// Usa o método concat() para combinar array_1 e array_2, além de adicionar o string "elemento_ousado" ao final.
 // O resultado é armazenado em array_concatenado.
 console.log(array_concatenado)
 // Saída: ["Elemento 1", "Elemento 2", "Elemento 3", "Elemento 4", "Elemento 5", "Bunda 1", "Bunda 2", "Bunda 3", "Bunda 4", "elemento_ousado"]
