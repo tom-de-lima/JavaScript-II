@@ -17,7 +17,7 @@ console.table(matriz_3x3)
 
 
 for (let i = 0; i < matriz_3x3.length; i++) {
-    for (let j = 0; j < matriz_3x3[i].length; j++){
+    for (let j = 0; j < matriz_3x3[i].length; j++){ //Necessário que o segundo for use o ínidce do primeiro para que não haja erro ao percorrer as colunas
         somaDosElementos += matriz_3x3[i][j]
     }
 }
