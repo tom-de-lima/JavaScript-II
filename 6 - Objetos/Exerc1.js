@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*Exercício 1: Criando e Modificando um Objeto
+=======
+/* Exercício 1: Criando e Modificando um Objeto
+>>>>>>> ed8cbf43467078354073876a9af17685bbd749c0
 Descrição:
 Crie um objeto chamado pessoa com as seguintes propriedades:
 
@@ -13,6 +17,7 @@ Declare o objeto usando const.
 Modifique e adicione propriedades dinamicamente.
 Utilize console.log() para exibir o objeto antes e depois das modificações. */
 
+<<<<<<< HEAD
 
 const pessoa = {
   nome: "Lima Neto",
@@ -30,3 +35,16 @@ pessoa.hobby = [
 ]
 
 console.log("Objeto atualizado com hobbies:", pessoa)
+=======
+const pessoa = {
+    nome: "Lima Neto",
+    idade: 44,
+    profissao: "Engenhiro de automações"
+    }
+
+console.log("Elementos originais do objeto:", pessoa)
+
+pessoa.hobby = ["Eng. Civil", "piloto de drone e helicopteros", "Engenheiro de dados e software"]
+
+console.log("Elementos do objeto atualizado:", pessoa)
+>>>>>>> ed8cbf43467078354073876a9af17685bbd749c0
