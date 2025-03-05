@@ -8,8 +8,9 @@ console.log(multiplosArgumentos(12, true, "Menina", 23.8))
 //-------------------------------------------------------------------------------------------
 
 function calcularmedia(...numeros) {
-  //O método .reduce() percorre um array e acumula valores ao longo do tempo. acumulador → Armazena o resultado da soma ao longo do tempo.
-    
+  //O método .reduce() percorre um array e acumula valores ao longo do tempo. 
+  
+    // -> Acumulador→ Armazena o resultado da soma ao longo do tempo.
     //->elementoAtual → Representa cada número do array durante a iteração.
     //->operação → Define o que será feito com cada elemento (neste caso, somar).
     //->valorInicial → O valor inicial do acumulador (0 no nosso caso).
