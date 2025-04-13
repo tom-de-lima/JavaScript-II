@@ -31,11 +31,47 @@ function criarPessoa() {
     };
 
     // Chama a função auxiliar para preencher os dados do objeto pessoa
-    dadosPessoa(pessoa); // Não há retorno aqui, pois modifica o objeto diretamente
+    dadosPessoa(pessoa)
     
     // Retorna o objeto preenchido
     return pessoa;
 }
+
+
+function escolherAcao() {
+  let running = true
+
+  let escolha = parseInt(
+    prompt(
+      "O que deseja realizar? \n1 - Adicionar outra pessoa; \n2 - Remover uma pessoa; \n3 - Sair."
+    ),
+    10
+  )
+  while (running) {
+    switch (escolha) {
+      case 1:
+        let novaPessoa = criarPessoa(novaPessoa)
+        pessoas.unshift(novaPessoa)
+        break
+      case 2:
+        let removido = pessoas.shift()
+        console.log(
+          "A pessoa a seguir foi removida da lista: ",
+          exibirDados(removido)
+        )
+        break
+      case 3:
+        console.log("Programa encerrado.")
+        running = false
+        break
+      default:
+        console.log("Digite uma escolha válida.")
+        break
+    }
+
+  }
+}
+
 
 // Função auxiliar que coleta e valida os dados da pessoa
 function dadosPessoa(objeto) {
@@ -70,7 +106,7 @@ function exibirDados(objeto) {
     console.log('A cidade da pessoa: ', objeto.cidade);
 }
 
-// Cria uma variável que armazena o objeto pessoa retornado pela função
-var pessoa1 = criarPessoa();
-// Exibe os dados da pessoa criada
-exibirDados(pessoa1);
+
+let pessoa1 = escolherAcao()
+exibirDados(pessoa1)
+
